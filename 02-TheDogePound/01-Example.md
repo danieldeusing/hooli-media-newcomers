@@ -146,7 +146,11 @@ Here's a "line block":
 
 and images can be specified like so:
 
-![example image](example-image.jpg "An exemplary image")
+![example image](https://www.fila.it/up/sites/4/DAS_brand_new.png "An exemplary image")
+
+example video
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/dQw4w9WgXcQ)](https://youtu.be/dQw4w9WgXcQ)
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:
