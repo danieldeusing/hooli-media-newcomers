@@ -1,19 +1,25 @@
 {
-  "folders": [
-    {
-      "name": "My Pet Hooligan",
-      "path": "01-MyPetHooligan",
-      "files": [
-        "01-Example.md",
-        "02-Example2.md"
-      ]
-    },
-    {
-      "name": "The Doge Pound",
-      "path": "02-TheDogePound",
-      "files": [
-        "01-Example.md"
-      ]
-    }
-  ]
+    "folders": [
+        {
+            "name": "MyPetHooligan",
+            "path": "01-MyPetHooligan",
+            "files": [
+                "01-MyPetHooligan.md",
+                "02-ZuckBots.md",
+                "03-Utility.md",
+                "04-Karrat.md",
+                "05-AMGI.md",
+                "06-StrategicPartners.md",
+                "07-FAQ.md",
+                "08-Links.md"
+            ]
+        },
+        {
+            "name": "TheDogePound",
+            "path": "02-TheDogePound",
+            "files": [
+                "01-Example.md"
+            ]
+        }
+    ]
 }
