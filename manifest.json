@@ -1,7 +1,7 @@
 {
     "folders": [
         {
-            "name": "MyPetHooligan",
+            "name": "My Pet Hooligan",
             "path": "01-MyPetHooligan",
             "files": [
                 "01-MyPetHooligan.md",
@@ -15,7 +15,7 @@
             ]
         },
         {
-            "name": "TheDogePound",
+            "name": "The Doge Pound",
             "path": "02-TheDogePound",
             "files": [
                 "01-Example.md"

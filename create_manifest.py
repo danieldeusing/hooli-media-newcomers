@@ -1,20 +1,20 @@
 import os
 import json
 
-
 def format_name(directory_name):
-    """Format directory name based on specific rules."""
-    # Handle specific cases as described
-    if directory_name.startswith("MyPetHooligan"):
-        return "My Pet Hooligan" + directory_name[len("MyPetHooligan"):]
-    elif directory_name.startswith("TheDogePound"):
-        return "The Doge Pound" + directory_name[len("TheDogePound"):]
-    # General case: Split at '-' and format to start with a number
+    """Format directory name by inserting spaces before capital letters in concatenated words."""
+    # Split at the first dash if the prefix is a number
     name_parts = directory_name.split('-', 1)
     if len(name_parts) > 1:
-        return name_parts[1]
-    return name_parts[0]
+        directory_name = name_parts[1]
 
+    # Insert space before capital letters
+    formatted_name = ""
+    for i, char in enumerate(directory_name):
+        if char.isupper() and i != 0 and not directory_name[i - 1].isspace():
+            formatted_name += ' '
+        formatted_name += char
+    return formatted_name
 
 def get_directories_and_files(_path):
     """Return a manifest of directories and files."""
@@ -30,7 +30,6 @@ def get_directories_and_files(_path):
                 "files": files
             })
     return _manifest
-
 
 # Directory to scan
 path = '.'
